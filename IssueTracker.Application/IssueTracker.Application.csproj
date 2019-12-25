@@ -5,8 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Issues\" />
-    <Folder Include="Users\" />
+    <ProjectReference Include="..\IssueTracker.Core\IssueTracker.Core.csproj" />
   </ItemGroup>
 
 </Project>
