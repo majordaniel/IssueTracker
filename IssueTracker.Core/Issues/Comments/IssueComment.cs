@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IssueTracker.Core.Misc;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;

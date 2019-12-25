@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using IssueTracker.Application.Users.Dtos;
 
 namespace IssueTracker.Application.Issues.Dtos
 {

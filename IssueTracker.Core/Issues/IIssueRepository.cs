@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IssueTracker.Core.Issues.Comments;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

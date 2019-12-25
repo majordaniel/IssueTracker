@@ -1,4 +1,5 @@
 ﻿using IssueTracker.Core.Issues.Comments;
+using IssueTracker.Core.Misc;
 using IssueTracker.Core.Users;
 using System;
 using System.Collections.Generic;
@@ -16,8 +17,7 @@ namespace IssueTracker.Core.Issues
 
         [NotNull]
         public string Title { get; protected set; }
-
-        [CanBeNull]
+        
         public string Body { get; protected set; }
 
         public bool IsClosed { get; protected set; }
@@ -28,8 +28,7 @@ namespace IssueTracker.Core.Issues
 
         [NotNull]
         public string CreatorUserId { get; protected set; } //No navigation property to another aggregate root!
-
-        [CanBeNull]
+        
         public string AssignedUserId { get; protected set; } //No navigation property to another aggregate root!
 
         [NotNull]

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IssueTracker.Application.Users.Dtos;
+using System;
 using System.Collections.Generic;
 using System.Text;
 

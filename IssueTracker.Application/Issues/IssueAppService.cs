@@ -1,6 +1,15 @@
-﻿using System;
+﻿using IssueTracker.Application.Authorization;
+using IssueTracker.Application.Issues.Dtos;
+using IssueTracker.Application.Session;
+using IssueTracker.Application.Users;
+using IssueTracker.Application.Users.Dtos;
+using IssueTracker.Core.Issues;
+using IssueTracker.Core.Misc;
+using IssueTracker.Core.Users;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace IssueTracker.Application.Issues
 {
@@ -39,8 +48,6 @@ namespace IssueTracker.Application.Issues
 
         public void AssignIssueToUser(AssignIssueToUserInput input)
         {
-            //TODO: Unit of work / transaction management
-
             AuthorizationService.CheckPermission("TaskAssignmentPermission");
             _validationService.Validate(input);
 
@@ -59,8 +66,6 @@ namespace IssueTracker.Application.Issues
 
         public void AddComment(AddCommentInput input)
         {
-            //TODO: Unit of work / transaction management
-
             AuthorizationService.CheckPermission("AddComment", input.IssueId);
             _validationService.Validate(input);
 
